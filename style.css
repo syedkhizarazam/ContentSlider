@@ -1,0 +1,149 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 13px;
+}
+
+h1 {
+  color: #333;
+}
+
+.carousel-inner {
+  height: 100%;
+  /* min-width: 400%; */
+  display: flex;
+  transition: all ease 0.5s;
+}
+
+.carousel-item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item h1 {
+  opacity: 0.5;
+}
+
+.carousel-controls .prev {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("prev.svg");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.carousel-controls .next {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("next.svg");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 1;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.carousel-indicators span {
+  display: inline-block;
+  background-color: rgb(77, 77, 77);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  margin: 0 12px;
+}
+
+.carousel-indicators span.active {
+  opacity: 1;
+}
+
+footer {
+  font-size: 13px;
+  color: #333;
+}
+
+.image1 {
+  height: 200px;
+  width: 200px;
+  padding-top: 20px;
+  padding: 12px;
+}
+
+.s1-button {
+  background-color: #3882f6;
+  border-color: #3882f6;
+  border-radius: 10px;
+  color: #f9faf8;
+  width: 150px;
+  height: 35px;
+  margin-top: 20px;
+}
+
+.testim {
+  padding: 12px;
+}
+
+.nameOf {
+  padding: 12px;
+}
+
+.Position {
+  padding: 12px;
+}
+
+@media (max-width: 550px) {
+  .carousel-controls {
+    display: none;
+  }
+}
